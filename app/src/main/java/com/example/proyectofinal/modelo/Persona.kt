@@ -1,4 +1,8 @@
 package com.example.proyectofinal.modelo
 
-class Persona {
+
+open class Persona(     val nombre: String,
+                        val  edad: Int,
+                        val numeroT: String) {
+
 }
