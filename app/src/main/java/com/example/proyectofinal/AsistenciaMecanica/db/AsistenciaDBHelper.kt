@@ -6,11 +6,11 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class AsistenciaDBHelper(context: Context):
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION){
-    override fun onCreate(db: SQLiteDatabase?) {
+    override fun onCreate(db: SQLiteDatabase) {
 
 
         // Tabla Persona
-        db!!?.execSQL("""
+        db.execSQL("""
     CREATE TABLE persona (
         idP INTEGER PRIMARY KEY AUTOINCREMENT,
         nombre TEXT,
